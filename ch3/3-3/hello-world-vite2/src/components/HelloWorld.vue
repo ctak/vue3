@@ -1,11 +1,17 @@
 <script setup>
-import { ref } from 'vue'
+import { onBeforeMount, onBeforeUpdate, onMounted, ref } from 'vue'
 
 defineProps({
   msg: String
 })
 
 const count = ref(0)
+
+console.log('setup');
+onMounted(() => console.log('onMounted')); // 이 순서는 생각하지 않는군.
+onBeforeMount(() => console.log('onBeforeMount'));
+onBeforeUpdate(() => console.log('onBeforeUpdate'));
+
 </script>
 
 <template>

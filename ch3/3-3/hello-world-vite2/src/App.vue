@@ -1,7 +1,9 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from '/@components/HelloWorld.vue'
+import HelloWorld from '/@components/HelloWorld.vue';
+//import * as Code3 from '/@components/C_3Dash7.vue'; // 이 부분도 실패하네.
+import Foo01 from '/@components/Foo01.vue';
 </script>
 
 /*
@@ -10,6 +12,10 @@ import HelloWorld from '/@components/HelloWorld.vue'
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
+  <hr />
+  <Foo01 />
+  <hr />
+  
 </template>
 
 <style>
