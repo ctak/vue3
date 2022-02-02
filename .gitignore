@@ -1,0 +1,7 @@
+node_modules/
+
+# 각 App 마다 dist/ 폴더 Ignore
+dist/
+
+# 각 App 마다 .vscode/ 폴더 Ignore
+.vscode/
