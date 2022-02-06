@@ -4,6 +4,8 @@
 import HelloWorld from '/@components/HelloWorld.vue';
 //import * as Code3 from '/@components/C_3Dash7.vue'; // 이 부분도 실패하네.
 import Foo01 from '/@components/Foo01.vue';
+import Foo02 from '/@components/Foo02.vue';
+import TestEventListener from '/@components/TestEventListener.vue';
 </script>
 
 /*
@@ -15,7 +17,10 @@ import Foo01 from '/@components/Foo01.vue';
   <hr />
   <Foo01 />
   <hr />
-  
+  <Foo02 />
+  <hr />
+  <TestEventListener />
+  <hr />
 </template>
 
 <style>
