@@ -6,6 +6,8 @@ import HelloWorld from '/@components/HelloWorld.vue';
 import Foo01 from '/@components/Foo01.vue';
 import Foo02 from '/@components/Foo02.vue';
 import TestEventListener from '/@components/TestEventListener.vue';
+import TestVIf from '/@components/TestVIf.vue';
+import TestVFor from '/@components/TestVFor.vue'
 </script>
 
 /*
@@ -20,6 +22,10 @@ import TestEventListener from '/@components/TestEventListener.vue';
   <Foo02 />
   <hr />
   <TestEventListener />
+  <hr />
+  <TestVIf />
+  <hr />
+  <TestVFor />
   <hr />
 </template>
 
