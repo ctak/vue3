@@ -7,7 +7,9 @@ import Foo01 from '/@components/Foo01.vue';
 import Foo02 from '/@components/Foo02.vue';
 import TestEventListener from '/@components/TestEventListener.vue';
 import TestVIf from '/@components/TestVIf.vue';
-import TestVFor from '/@components/TestVFor.vue'
+import TestVFor from '/@components/TestVFor.vue';
+import TestComputed from '/@components/TestComputed.vue';
+import TestWatch from '/@components/TestWatch.vue';
 </script>
 
 /*
@@ -26,6 +28,10 @@ import TestVFor from '/@components/TestVFor.vue'
   <TestVIf />
   <hr />
   <TestVFor />
+  <hr />
+  <TestComputed />
+  <hr />
+  <TestWatch />
   <hr />
 </template>
 
