@@ -25,6 +25,37 @@ app.component('counter', {
   `
 });
 
+// ng 처럼 MyComponent 인데 <my-component> 로 되는 것인데. 정규화를 하네.
+app.component('MyComponent', {
+  props: {
+    title: {
+      type: String,
+      required: true,
+      validator: function (v) {
+        return typeof v === String;
+      }
+    },
+    data: {
+      type: Object,
+      default: () => {
+        return [];
+      },
+    },
+  },
+
+  setup() {
+    const count = ref(0);
+    return { count }
+  },
+
+  template: `
+    <h3 v-text="title" />
+    <p v-for="i in data" :key="i">{{ i }}</p>
+  `,
+
+
+})
+
 // app 을 #app 장착.
 app.config.globalProperties.title = 'Vue 3 Demo';
 app.mount('#app');
