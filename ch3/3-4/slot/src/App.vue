@@ -9,14 +9,21 @@
   <Component>
     <template v-slot="slotProps"> ✔️ {{ slotProps.item }} </template>
   </Component>
+  <hr />
+  <InjectTest></InjectTest>
 </template>
 
 <script>
 import Component from './components/Component.vue';
+import InjectTest from './components/InjectTest.vue';
 
 export default {
+  provide: {
+    msg: 'My 메시지',
+  },
   components: {
     Component,
+    InjectTest,
   }
 }
 </script>
